@@ -13,7 +13,7 @@ void setup()
     Particle.function("Red_Light", Red_Light_Toggle);
     Particle.function("Yellow_Light", Yellow_Light_Toggle);
     Particle.function("Green_Light", Green_Light_Toggle);
-    Particle.function("Standart_Operation", Standart_Operation_Toggle);
+    Particle.function("Standart_Operation", Standard_Operation_Toggle);
 
     // Start with all LEDs off
     digitalWrite(led_ob, LOW);
@@ -83,7 +83,7 @@ int Green_Light_Toggle(String receiving_instruction)
     }
 }
 
-int Standart_Operation_Toggle(String receiving_instruction)
+int Standard_Operation_Toggle(String receiving_instruction)
 {
     if (receiving_instruction == "on")
     {
